@@ -6,7 +6,7 @@ const songSchema = new mongoose.Schema({
     album: { type: String, required: true},
     image: {type: String, required: true},
     file: {type: String, required : true},
-    durations: {type: String, requied: true}
+    duration: {type: String, requied: true}
 })
 
 const songModel = mongoose.models.song || mongoose.model("song", songSchema)
