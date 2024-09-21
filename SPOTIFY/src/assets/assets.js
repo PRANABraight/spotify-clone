@@ -1,4 +1,5 @@
 import backwardIcon from './backward_icon.png';
+import spotify_logo from './spotify_logo.png'
 import homeIcon1 from './Home.svg';
 import searchIcon1 from './Search.svg';
 import libraryIcon1 from './lib.svg';
@@ -53,6 +54,9 @@ import SongCreditsIcon from './fig1/Song_credits.svg';
 import ViewAlbumIcon from './fig1/View_album.svg';
 import ViewArtistIcon from './fig1/View_artist.svg';
 import VolumeIcon from './fig1/Volume.svg';
+import clock_icon from './image.png'
+import pause_icon from './pause.png'
+import play_icon from './play.png'
 
 
 
@@ -62,6 +66,10 @@ import AllOfTheStars from './Ed Sheeran - All Of The Stars.mp3';
 
 
 export const assets ={
+    play_icon,
+    pause_icon,
+    clock_icon,
+    spotify_logo,
     homeIcon1,
     searchIcon1,
     libraryIcon1,
@@ -139,7 +147,7 @@ export const albumsData = [{
 {
     id:2,
     name: "Top songs Global",
-    image:card5Img,
+    image: card5Img,
     desc: "Your weekly update of most played tracks",
     bgColor: "742a2a"
 
@@ -154,7 +162,7 @@ export const songsData = [
     id:0,
     name: "Happier",
     image:card2Img,
-    file: Happier.mp3, //mp3 file,
+    file: Happier, //mp3 file,
     desc: "Put a smile on your face with these happy tunes",
     duration: "3:00"
         
@@ -162,18 +170,18 @@ export const songsData = [
     {id:1,
     name: "Teardrops on My Guitar",
     image:card3Img,
-    file: Teardrops.mp3,
+    file: Teardrops,
     desc: "Put a smile on your face with these happy tunes",
     duration: "3:00"
 },
 
      {id:2,
-    name: "AllOfTheStars",
+    name: "All Of The Stars",
     image:card3Img,
-    file: AllOfTheStars.mp3,
+    file: AllOfTheStars,
     desc: "Put a smile on your face with these happy tunes",
     duration: "3:00"
-},
+}
 
 //     {id:1,
 //     name: "Song Four",
