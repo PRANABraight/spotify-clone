@@ -13,14 +13,14 @@ const Sidebar = () => {
             <p className="font-bold">Home</p>
         </div>
         <div className=" flex items-center gap-3 pl-8 cursor-pointer">
-            <img className="w-10" src={assets.searchIcon} alt="" />
+            <img className="w-4" src={assets.searchIcon1} alt="" />
             <p className="font-bold">Search</p>
         </div>
     </div>
     <div className="bg-[#121212] h-[85%] rounded">
         <div className="p-4 flex items-center justify-between">
-            <div className="flex items-center gap-3">
-                <img className="w-8" src={assets.libraryIcon} alt="" />
+            <div className="flex items-center gap-3 pl-5 cursor-pointer">
+                <img className="w-4" src={assets.libraryIcon} alt="" />
                 <p className="font-semibold">Your Library</p>
             </div>
             <div className="flex items-center gap-3">

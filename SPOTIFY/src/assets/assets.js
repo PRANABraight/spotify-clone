@@ -1,14 +1,17 @@
 import backwardIcon from './backward_icon.png';
 import spotify_logo from './spotify_logo.png'
-import homeIcon1 from './Home.svg';
-import searchIcon1 from './Search.svg';
+import searchIcon1 from './search.png';
 import libraryIcon1 from './lib.svg';
 import card1Img from './card1img.jpeg';
 import card2Img from './card2img.jpeg';
 import card3Img from './card3img.jpeg';
 import card4Img from './card4img.jpeg';
-import card5Img from './card5img.jpeg';
+import card5Img from './img16.jpg';
 import card6Img from './card6img.jpeg';
+import img9 from './img9.jpg'
+import img11 from './img11.jpg'
+import img15 from './img15.jpg'
+
 import forwardIcon from './forward_icon.png';
 import libraryIcon from './library_icon.png';
 import logo from './logo.png';
@@ -34,6 +37,7 @@ import searchIcon from './searchIcon.svg'
 import h2 from './State=Default-1.svg'
 import playlist from './State=Default.svg'
 import p2 from './State=Hover-1.svg'
+import homeIcon1 from './home.png'
 
 import made from './fig1/made.svg';
 import AboutIcon from './fig1/About.svg';
@@ -57,15 +61,31 @@ import VolumeIcon from './fig1/Volume.svg';
 import clock_icon from './image.png'
 import pause_icon from './pause.png'
 import play_icon from './play.png'
+import tear from './tear.jpg'
+import aots from './aots.png'
+import happier from './happier.jpg'
+import heyjudeimg from './heyjudeimg.jpg'
+import theclimbimg from './theclimbimg.png'
+import shboomimg from './shboomimg.jpg'
 
-
-
+import heyjude from './The Beatles - Hey Jude.mp3'
 import Happier from './Ed Sheeran - Happier.mp3';
 import Teardrops from './TeardropsonMyGuitar.mp3';
 import AllOfTheStars from './Ed Sheeran - All Of The Stars.mp3';
+import shboom from './Sh-Boom (Life Could Be a Dream) - Billy Williams Quartet.mp3'
+import theclimb from './01TheClimb.mp3'
 
 
 export const assets ={
+    theclimbimg,
+    shboomimg,
+    heyjudeimg,
+    theclimb,
+    shboom,
+    heyjude,
+    happier,
+    aots,
+    tear,
     play_icon,
     pause_icon,
     clock_icon,
@@ -116,6 +136,10 @@ export const assets ={
     card4Img,
     card5Img,
     card6Img,
+    img9,
+    img15,
+    img11,
+
     forwardIcon,
     libraryIcon,
     logo,
@@ -132,7 +156,7 @@ export const albumsData = [{
     id:0,
     name: "Top 50 Global" ,
     image: card1Img,
-    desc: "You weekly update of the most played tracks",
+    desc: "Your weekly update of the most played tracks",
     bgColor: "#2a4365"
 
 },
@@ -141,7 +165,7 @@ export const albumsData = [{
     name: "Top 50 India",
     image: card6Img,
     desc:"Your weekly update of most played tracks",
-    bgColor: "22543d"
+    bgColor: "#742a2a"
 
 },
 {
@@ -149,7 +173,32 @@ export const albumsData = [{
     name: "Top songs Global",
     image: card5Img,
     desc: "Your weekly update of most played tracks",
-    bgColor: "742a2a"
+    bgColor: "#B57EDC"
+
+},
+{
+    id:3,
+    name: "Top 50 songs India",
+    image: img9,
+    desc: "Your weekly update of most played tracks",
+    bgColor: "#22543d"
+
+},
+{
+    id:4,
+    name: "Mega Hit Mix",
+    image: img11,
+    desc: "Your weekly update of most played tracks",
+    bgColor: "22543d"
+
+},
+
+{
+    id:5,
+    name: "Happy Favourites",
+    image: img15,
+    desc: "Your weekly update of most played tracks",
+    bgColor: "#FBEC5D"
 
 },
 
@@ -161,7 +210,7 @@ export const songsData = [
     {
     id:0,
     name: "Happier",
-    image:card2Img,
+    image:happier,
     file: Happier, //mp3 file,
     desc: "Put a smile on your face with these happy tunes",
     duration: "3:00"
@@ -169,7 +218,7 @@ export const songsData = [
     },
     {id:1,
     name: "Teardrops on My Guitar",
-    image:card3Img,
+    image:tear,
     file: Teardrops,
     desc: "Put a smile on your face with these happy tunes",
     duration: "3:00"
@@ -177,16 +226,31 @@ export const songsData = [
 
      {id:2,
     name: "All Of The Stars",
-    image:card3Img,
+    image:aots,
     file: AllOfTheStars,
     desc: "Put a smile on your face with these happy tunes",
     duration: "3:00"
-}
+},
 
-//     {id:1,
-//     name: "Song Four",
-//     image:card3Img,
-//     desc: "Put a smile on your face with these happy tunes",
-//     duration: "3:00"
-// }
+{  id:3,
+    name: "Hey Jude",
+    image:heyjudeimg,
+    file: heyjude,
+    desc: "Put a smile on your face with these happy tunes",
+    duration: "3:00"
+},
+{  id:4,
+    name: "Sh-Boom",
+    image:shboomimg,
+    file: shboom,
+    desc: "Put a smile on your face with these happy tunes",
+    duration: "3:00"
+},
+{  id:5,
+    name: "The Climb",
+    image:theclimbimg,
+    file: theclimb,
+    desc: "Put a smile on your face with these happy tunes",
+    duration: "3:00"
+}
 ]
