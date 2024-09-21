@@ -8,10 +8,12 @@ const addAlbum = async (req, res) => {
         const bgcolour = req.body.bgcolour;
         const imageFile = req.file;
 
+        // Ensure imageFile exists
         if (!imageFile) {
             return res.status(400).json({ success: false, message: "Image file is required" });
         }
 
+        // Use a promise to handle the stream
         const imageUpload = await new Promise((resolve, reject) => {
             const stream = cloudinary.uploader.upload_stream({ resource_type: "image" }, (error, result) => {
                 if (error) {
@@ -20,6 +22,7 @@ const addAlbum = async (req, res) => {
                 resolve(result);
             });
 
+            // Pipe the image buffer to the Cloudinary stream
             stream.end(imageFile.buffer);
         });
 
